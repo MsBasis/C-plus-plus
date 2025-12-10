@@ -31,16 +31,37 @@ int tester(){                   //main - nazwa, int - zwraca liczbe (return 0)
     return 0;                 //zwracanie 0 - oznacza ze program sie udal jest to informacja dla systemu czy wszystko G
 }
 //witanie
-string hej(){
-    string imie;
+string tworzenie(){
+    string imie;            //i wtedy jak w pythonie nazwa();
     cout << "Podaj swoje imie: ";
     cin >> imie;
     return imie;
 }
+void hej(string imie){                 //void to wtedy kiedy nic nie chcemy zwracac (pp odpalac calosc)
+    cout<< "Witaj " <<imie;
+}
+
+string przyjmij(){
+    string login, haslo;
+    cout << "Podaj login, haslo i czy jestes adminem"<<"\n";
+    cin >> login;
+    cin >> haslo;
+    cout << login<<" "<<haslo;
+}
+
+
+
+void sprawdzanie(){
+    struct {
+        string login;
+        string haslo;
+    } admin;
+    
+
+}
 
 int main(){
-    string name = hej();
-    cout<<"Witaj "<< name;
+    przyjmij();
     return 0;
 }
 
