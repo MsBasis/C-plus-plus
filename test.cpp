@@ -14,7 +14,7 @@ int dodawanie(){
     int sum = a + b;
     return sum;
 }
-string login(){
+string bruh(){
     const string login = "MrBasis";
     return login;
 }
@@ -26,7 +26,7 @@ int tester(){                   //main - nazwa, int - zwraca liczbe (return 0)
     cout << number << endl;  //cout - console output, << to co bedzie po tym to idzie do konsoli, endl - zakonczenie linii
     cout << "i'am "<<number<<" years old"<<endl;
     cout << dodawanie()<<"\n";
-    cout<<login()<<"\n";
+    cout<<bruh()<<"\n";
     cout<<ID;
     return 0;                 //zwracanie 0 - oznacza ze program sie udal jest to informacja dla systemu czy wszystko G
 }
@@ -47,21 +47,18 @@ string przyjmij(){
     cin >> login;
     cin >> haslo;
     cout << login<<" "<<haslo;
+    return login; //return wiecej niz 1, musi byc w struct
 }
 
 
 
 void sprawdzanie(){
-    struct {
-        string login;
-        string haslo;
-    } admin;
-    
-
+    string konto[2] = {"admin","haslo"};
+    cout << konto[1];
 }
 
 int main(){
-    przyjmij();
+    sprawdzanie();
     return 0;
 }
 
