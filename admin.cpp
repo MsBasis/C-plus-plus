@@ -26,7 +26,6 @@ map<string, vector<string>> database(){
 void sprawdzanie(){
     map<string, vector<string>> baza = database();
     vector<string> user = logowanie();
-    
 }
 
 
