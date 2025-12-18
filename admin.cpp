@@ -17,8 +17,8 @@ vector<string> logowanie(){ //mozna zwracac dane w rozncyh foramtach ale trzbe t
 }
 map<string, vector<string>> database(){
     map<string, vector<string>> users = {
-        {"MrBasis",{"MrBasis","1234","Admin"}},
-        {"Eva",{"Eva","67","user"}}
+        {"User1",{"MrBasis","1234","Admin"}},
+        {"User2",{"Eva","67","user"}}
     };
     return users;
 }
@@ -26,12 +26,15 @@ map<string, vector<string>> database(){
 void sprawdzanie(){
     map<string, vector<string>> baza = database();
     vector<string> user = logowanie();
+    int rozmiar = baza.size();
+    
+    for (int i = 0; i < rozmiar; i++) {
+        cout << "cos"<<endl;
+    }
 }
 
-
-
 int main(){
-    //vector<string> x = logowanie();
+    sprawdzanie();
     return 0;
 }
 
