@@ -19,7 +19,7 @@ vector<string> logowanie(){ //mozna zwracac dane w rozncyh foramtach ale trzbe t
 map<string, vector<string>> database(){
     map<string, vector<string>> users = {
         {"User1",{"MrBasis","1234","Admin"}},
-        {"User2",{"Eva","67","User"}},
+        {"User2",{"Eva","67","Admin"}},
         {"User3",{"Mira","21","User"}}
     };
     return users;
